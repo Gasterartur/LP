@@ -25,10 +25,43 @@
           search
         </span>
       </div>
+
+      
       <!-- Кнопка редактировать посты, либо создать -->
       <button class="float-button">
         <span class="material-symbols-rounded"> edit </span>
       </button>
+
+
+      <!-- Блок создания нового дела -->
+      <h2 class="todo-title">Новая запись</h2>
+      <form class="create-form" id="create-form">
+        <input
+         type="text"
+         class="create-form__input"
+         placeholder="Description"
+         name="description"
+         id="description"
+         required
+         >
+         <input
+         type="datetime-local"
+         class="create-form__input"
+         placeholder="Date"
+         name="startDate"
+         id="startDate"
+         required
+         >
+         <div class="form__buttons-wrapper">
+          <button class="form-button form-button--primary" type="submit">
+            Добавить
+          </button>
+          <button class="form-button form-button--secondary" type="reset">
+            Очистить
+          </button>
+         </div>
+      </form>
+
       <!-- Список кнопок для сортировки списка дел -->
       <h2 class="todo-title">Список дел</h2>
       <div class="split-button">
@@ -63,6 +96,44 @@
           Готовые
         </button>
       </div>
+      <ul class="todo-list">
+        <li class="todo-block">
+          <label for="checkbox" class="checkbox">
+            <input type="checkbox" name="checkbox">
+            <span class="material-symbols-rounded checkbox__check-icon">
+              check
+            </span>
+          </label>
+          <div class="todo-block__data">
+            <p class="todo-block__date">8 августа, 09:24</p>
+            <h3 class="todo-block__title">Покормить кошку</h3>
+          </div>
+        </li>
+        <li class="todo-block">
+          <label class="checkbox">
+            <input type="checkbox" name="checkbox">
+            <span class="material-symbols-rounded checkbox__check-icon">
+              check
+            </span>
+          </label>
+          <div class="todo-block__data">
+            <p class="todo-block__date">8 августа, 09:24</p>
+            <h3 class="todo-block__title">Покормить кошку</h3>
+          </div>
+        </li>
+        <li class="todo-block">
+          <label for="checkbox" class="checkbox">
+            <input type="checkbox" name="checkbox">
+            <span class="material-symbols-rounded checkbox__check-icon">
+              check
+            </span>
+          </label>
+          <div class="todo-block__data">
+            <p class="todo-block__date">8 августа, 09:24</p>
+            <h3 class="todo-block__title">Покормить кошку</h3>
+          </div>
+        </li>
+      </ul>
     </div>
 
     <script src="./script.js"></script>
